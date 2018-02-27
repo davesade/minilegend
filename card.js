@@ -1,5 +1,5 @@
 function card() {
 
-    return random(["archer", "soldier", "knight", "spy", "horseman"]);
+    return random(["archer", "pikeman", "knight", "rogue", "horseman"]);
 
 }

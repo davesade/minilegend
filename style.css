@@ -1,0 +1,120 @@
+p {
+  color: green;
+  background-color: lightblue;
+  background: pink;
+  font-size: 20px;
+}
+
+h1 {
+    color: navy;
+    margin-left: 20px;
+}
+
+.archer {
+  float: left;
+  margin-left: 30px;
+  background-image: url('./img/archer.jpg');
+  background-size: contain;
+  height: 245px;
+  width: 180px;
+}
+
+.horseman {
+  float: left;
+  margin-left: 30px;
+  background-image: url('./img/horseman.jpg');
+  background-size: contain;
+  height: 245px;
+  width: 180px;
+}
+
+.knight {
+  float: left;
+  margin-left: 30px;
+  background-image: url('./img/knight.jpg');
+  background-size: contain;
+  height: 245px;
+  width: 180px;
+}
+
+.rogue {
+  float: left;
+  margin-left: 30px;
+  background-image: url('./img/rogue.jpg');
+  background-size: contain;
+  height: 245px;
+  width: 180px;
+}
+
+.pikeman {
+  float: left;
+  margin-left: 30px;
+  background-image: url('./img/pikeman.jpg');
+  background-size: contain;
+  height: 245px;
+  width: 180px;
+}
+
+.gameFrame {
+    width: 90%;
+    background: #505050;
+}
+
+.gameRow {
+    clear: both;
+}
+
+.card {
+    float:  left;
+    margin-left: 30px;
+    background-image: url('./img/archer.jpg');
+    height: 123px;
+    width: 66px;
+}
+
+.cardLose {
+    float:  left;
+    margin-left: 30px;
+    background-image: url('./img/archer.jpg');
+    height: 123px;
+    width: 66px;
+    background-color: red;
+    background-blend-mode: darken;
+}
+
+.card:first-child {
+    margin-left: 50;
+}
+
+.cardLose:first-child {
+    margin-left: 50;
+    background-color: none;
+    background-blend-mode: lighten;
+}
+
+.name {
+    float:  right;
+    margin-left: 30px;
+    outline: 3px;
+}
+
+.winner {
+    background-image: url('./img/youwon.gif');
+    background-size: contain;
+    float:  right;
+    height: 123px;
+    width: 66px;
+    margin-right: 30px;
+    outline: 3px;
+}
+
+.report {
+    float:  left;
+    margin-left: 30px;
+    outline: 3px;
+    width: 66px;
+}
+
+.report:first-child {
+    margin-left: 50;
+}

@@ -5,23 +5,23 @@ function battle(players, callback) {
   let combinations = {
     archer: {
       name: "archer",
-      defeats: ["soldier", "knight"]
+      defeats: ["pikeman", "knight"]
     },
-    spy: {
-      name: "spy",
+    rogue: {
+      name: "rogue",
       defeats: ["archer", "horseman"]
     },
-    soldier: {
-      name: "soldier",
-      defeats: ["spy", "knight"]
+    pikeman: {
+      name: "pikeman",
+      defeats: ["rogue", "knight"]
     },
     knight: {
       name: "knight",
-      defeats: ["spy", "horseman"]
+      defeats: ["rogue", "horseman"]
     },
     horseman: {
       name: "horseman",
-      defeats: ["soldier", "archer"]
+      defeats: ["pikeman", "archer"]
     }
   };
 
