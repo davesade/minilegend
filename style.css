@@ -7,12 +7,12 @@ p {
 
 h1 {
     display: inline-block;
-    width: 500px;
+    width: 300px;
     padding: 20px;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     margin-left: 20px;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 button
@@ -30,7 +30,14 @@ button
 
 }
 
+button:active
+{
+    background-color: hotpink;
+    border: none;
+}
+
 .gameFrame {
+    position: relative;
     display: block;
     width: 100%;
     padding: 40px 0;
@@ -40,11 +47,11 @@ button
 }
 
 .gameRow {
-    position: relative;
+    
     display: block;
     width: 100%;
     
-    padding: 40px 40px 0 40px;
+    padding: 40px 40px 40px 40px;
    
 }
 
@@ -135,8 +142,8 @@ button
    font-variant-caps: all-small-caps;
    color: aliceblue;
     position: absolute;
-    top: 0px;
-    left: 40px;
+    top: 30px;
+    left: 240px;
     z-index: 1;
     font-weight: 700;
 }
@@ -155,11 +162,37 @@ button
     background-size: contain;*/
 
     margin-right: 30px;
-    margin-bottom: 50px;
+    
+    margin-top: 20px;
 }
 
 .draw { background-color: rgb(199, 129, 0); }
 .winner {background-color: rgb(0, 117, 117);}
+
+.gameRow:first-child {
+
+    border-bottom: solid 1px rgb(80, 80, 80);
+
+}
+
+.gameRow:nth-child(2) {
+
+    padding-bottom: 0;
+}
+
+.gameRow:first-child .draw { display: none;}
+.gameRow:first-child .winner { display: none;}
+
+.gameRow:first-child .name {
+
+    left: 40px;
+
+}
+
+.gameRow:nth-child(2) .name::before {
+
+    content: "/  ";
+}
 
 .report {
     display: block;
