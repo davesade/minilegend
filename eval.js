@@ -81,7 +81,7 @@ function battle(players, callback) {
   if (players[0].score > players[1].score) {
     result.playerAwinner = true;
   } else {
-    if (players[0].score > players[1].score) {
+    if (players[1].score > players[0].score) {
       result.playerBwinner = true;
     } else {
       result.draw = true;
