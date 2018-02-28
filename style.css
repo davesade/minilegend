@@ -108,6 +108,16 @@ h1 {
     outline: 3px;
 }
 
+.draw {
+    background-image: url('./img/draw.png');
+    background-size: contain;
+    float:  right;
+    height: 123px;
+    width: 66px;
+    margin-right: 30px;
+    outline: 3px;
+}
+
 .report {
     float:  left;
     margin-left: 30px;

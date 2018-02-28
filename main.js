@@ -11,7 +11,7 @@
 
   function setup() {
   noCanvas();
-  
+
   let startButton = createButton('Start');
 
   function renderBattle() {
@@ -19,13 +19,13 @@
           players[i] = new Player(deckSize)
       }
 
-      //createP(JSON.stringify(players));
+      console.log(players);
 
       battle(players, function(err, result){
           if (err) {
               console.log('Something went wrong!')
           } else {
-              //createP(JSON.stringify(result));
+              console.log(result);
               doTheGraphics(result, players);
           }
 
