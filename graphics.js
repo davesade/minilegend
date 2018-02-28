@@ -32,12 +32,6 @@ function doTheGraphics(result, players) {
       scoreDiv.addClass('winner');
     }
 
-    if (result.playerAwinner) {
-      let scoreDiv = createDiv('Player A WINS!');
-      scoreDiv.parent(gameRow);
-      scoreDiv.addClass('winner');
-    }
-
     if (result.draw) {
       let scoreDiv = createDiv('DRAW!');
       scoreDiv.parent(gameRow);
